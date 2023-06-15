@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*header*/
+header{
+    text-align: center;
+}
+
+/*main*/
+.container{
+    max-width: 1000px;
+    margin: 15px auto;
+    text-align: center;
+}
+.clearfix {
+    content:"";
+    display: block;
+    clear: both;
+}
+.cards {
+    height: 100px;
+    width:calc(100% / 3);
+    border: 1px solid black;
+    background-color:blueviolet;
+    float: left;
+}
