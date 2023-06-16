@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body{ 
+    font-family:sans-serif;
+}
+
 /*header*/
 header{
     font-family:sans-serif;
@@ -11,6 +15,7 @@ header{
     margin: 25px auto; 
     color: hsl(338.78deg 77.02% 53.92%);
     font-size: larger;
+    padding-right: 25px;
 }
 
 /*main*/
@@ -23,7 +28,7 @@ div > a{
     margin-top: 3px;
 }
 div > img{
-    max-height: 80px;
+    height: 80px;
     max-width: 100%;
     float: left;
     margin-right: 10px;
@@ -37,21 +42,18 @@ div > h2,p{
     color: white;
     padding-top: 3px;
 }
-
-.clearfix{
+.clearfix::after{
     content:"";
-    display: block;
+    display: table;
     clear: both;
 }
 .container{
-    font-family:sans-serif;
     width: 1000px;
     margin: 15px auto;
     padding: 15px;
     text-align: center;
 }
 .cards{
-    height: 80px;
     width:calc(100% / 3 - 30px);
     margin: 10px;
     background-color:black;
@@ -61,6 +63,8 @@ div > h2,p{
     font-size: 15px;
     margin-bottom: 35px;
     color: black;
+    margin-right: 30px;
+    padding-right: 5px;
 }
 .middle-text{
     width:calc(100% / 2);
